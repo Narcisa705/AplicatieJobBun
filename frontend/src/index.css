@@ -1,0 +1,753 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/*WorkGrid.css */
+.work-grid {
+  padding: 20px;
+  font-family: 'Dancing Script', cursive; /* Font artistic */
+  background-color: #f1f1f1;
+}
+
+.work-grid h1 {
+  color: #fff;
+  background: linear-gradient(45deg, #ff6f61, #d500f9, #1e88e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.work-info h3 {
+  font-weight: bold;
+  color: #fff;
+  background: #000000;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.work-info p {
+  margin: 0;
+  font-size: 1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  max-width: 100%;
+}
+
+.work-info a {
+  color: #585858;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.work-info a.client-url-link {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: block;
+  word-wrap: break-word;
+}
+
+.work-info a.client-url-link:hover {
+  text-decoration: underline;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.grid-item {
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.work-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*WorkGrid.css */
+
+
+
+
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff6f61, #d500f9, #1e88e5);
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .navbar-link:hover {
+  text-decoration: underline;
+} */
+
+.navbar-account-menu,
+.navbar-user-menu {
+  position: relative;
+}
+
+.account-menu-button,
+.user-menu-button,
+.dropdown-link,
+.logout-button,
+.account-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.user-menu-button:hover,
+.dropdown-link:hover,
+.logout-button:hover,
+.account-button:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.account-menu-dropdown,
+.user-menu-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-link i {
+  margin-right: 8px;
+}
+
+.dropdown-link:hover {
+  background: #f0f0f0;
+}
+
+
+/* Navbar.css */
+
+/* GalleryGrid.css */
+.gallery-grid {
+  padding: 20px;
+  background: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+}
+
+.gallery-grid h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #ff6347;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-image-container {
+  overflow: hidden;
+  height: 200px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery-info h3 {
+  color: #000000;
+  font-family: 'Dancing Script', cursive;
+}
+
+.gallery-info p {
+  color: #7e7e7e;
+  overflow-wrap: break-word;
+  font-family: 'Dancing Script', cursive;
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.gallery-controls button {
+  background: #ff6347;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Dancing Script', cursive;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-controls button:hover {
+  background: #ff4500;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background: #dc143c;
+}
+
+.delete-button:hover {
+  background: #b22222;
+}
+
+.add-work-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-work-link {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff6347, #ff4500);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.add-work-link:hover {
+  background: linear-gradient(45deg, #ff4500, #ff6347);
+  transform: scale(1.05);
+}
+/* GalleryGrid.css */
+
+/*AddWorkForm.css */
+.add-work-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f7beff, #f7f7f7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-work-form-container h1 {
+  text-align: center;
+  color: #e100ff;
+  font-family:'Dancing Script', cursive; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.add-work-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-work-form label {
+  font-size: 1.1rem;
+  color: #e100ff;
+  font-family: 'Dancing Script', cursive; ;
+}
+
+.add-work-form input,
+.add-work-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  
+}
+
+.add-work-form textarea {
+  resize: vertical;
+  min-height: 150px;
+  
+ 
+}
+
+.add-work-form button {
+  background: #e100ff;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+  font-family: 'Dancing Script', cursive;
+}
+
+.add-work-form button:hover {
+  background: #d600e6;
+}
+
+.add-work-form input[type="file"] {
+  padding: 0;
+}
+
+
+/*AddWorkForm.css */
+
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .work-grid {
+    padding: 10px;
+  }
+  
+  .work-grid h1 {
+    font-size: 1.5rem;
+  }
+
+  .work-info p {
+    font-size: 0.9rem;
+  }
+  
+  .navbar-logo a {
+    font-size: 24px;
+  }
+  
+  .navbar-link {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .add-work-form-container {
+    padding: 15px;
+  }
+
+  .add-work-form-container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .add-work-form button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .gallery-item {
+    width: 100%;
+  }
+  
+  .work-grid {
+    padding: 15px;
+  }
+  
+  .work-grid h1 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-logo a {
+    font-size: 26px;
+  }
+
+  .navbar-link {
+    margin: 0 10px;
+    font-size: 17px;
+  }
+
+  .add-work-form-container {
+    padding: 20px;
+  }
+  
+  .add-work-form-container h1 {
+    font-size: 1.75rem;
+  }
+  
+  .add-work-form button {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* WelcomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(45deg, #ff6f61, #d500f9, #1e88e5); */
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.h11 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#ff6f61, #d500f9, #1e88e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+.p11 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #ff6f61;
+}
+
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #ff6f61;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.home-button:hover {
+  background-color: #d500f9;
+  transform: translateY(-4px);
+}
+
+
+.home-button:active {
+  background-color: #1e88e5;
+  transform: translateY(0);
+}
+
+/* MyAccount.css*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.client-table-container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.client-table-container h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #f66942;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.client-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.client-table thead {
+  background: -webkit-linear-gradient(#ff6f61, #d500f9, #1e88e5); /* Gradient background */
+  color: #fff;
+  font-family: 'Dancing Script', cursive; /* Font applied to table header */
+}
+
+.client-table th, .client-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.client-table th {
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive; /* Font applied to table header */
+}
+
+.client-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.client-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.client-table td {
+  color: #333;
+}
+
+.client-table td div {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.client-table td {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.client-table .no-works {
+  color: #999;
+  font-style: italic;
+}
+
+.my-account {
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 2rem; 
+  background: -webkit-linear-gradient(#ff6f61, #d500f9, #1e88e5); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ margin-left: 40px;
+}
+
+.error-message {
+  color: rgb(177, 1, 162);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* MyAccount.css*/
+
+.add-work-form-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+
+h1, h2 {
+  color: #333;
+}
+
+.error-message {
+  color: rgb(255, 0, 242);
+  margin-bottom: 20px;
+}
+
+.success-message {
+  color: rgb(101, 0, 68);
+  margin-bottom: 20px;
+}
+
+
+.add-work-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input, .form-textarea, .form-file-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.user-details-container {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+
+
+.user-details-container .form-group {
+  margin-bottom: 15px;
+}
+
+.user-details-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user-details-container .form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-details-container .submit-button {
+  background-color: #94007c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-details-container .submit-button:hover {
+  background-color: #e07fce;
+}

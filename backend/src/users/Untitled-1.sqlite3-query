@@ -1,0 +1,1 @@
+Select*from work where status="visible";
