@@ -78,7 +78,7 @@ const AddWorkForm = () => {
         return;
       }
 
-      const result = await response.json();
+      // const result = await response.json();
       setSuccessMessage('Work added successfully!');
       setTitle('');
       setDescription('');
